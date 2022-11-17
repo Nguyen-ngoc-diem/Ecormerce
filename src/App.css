@@ -60,12 +60,14 @@ nav {
 }
 
 #cart_count {
-    background-color: #febd69;
+    background-color: #71504b61;
     padding: 0.2rem 0.5rem;
-    border-radius: 0.2rem;
+    border-radius: 2.2rem;
     color: black;
     font-weight: bold;
+    position: absolute;
     font-size: 0.9rem;
+    left: 6.5rem;
 }
 
 /* Home page */
