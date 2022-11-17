@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer';
+import Banner from "./components/layout/Banner";
 
 import Home from './components/Home'
 import ProductDetails from './components/product/ProductDetails'
@@ -47,8 +48,8 @@ import store from "./store";
 import axios from 'axios'
 
 //payment
-import {Elements} from "@stripe/react-stripe-js"
-import {loadStripe} from "@stripe/stripe-js"
+import { Elements } from "@stripe/react-stripe-js"
+import { loadStripe } from "@stripe/stripe-js"
 
 
 function App() {
@@ -72,6 +73,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+        <Banner />
         <div className="container container-fluid">
           <Routes>
             <Route path="/" element={<Home />} exact />
@@ -90,27 +92,29 @@ function App() {
             <Route path="/password/reset/:token" element={<NewPassword />} exact />
             <Route path="/success" element={<ProtectedRoute> <OrderSuccess /> </ProtectedRoute>} exact />
 
-            <Route path="/orders/me" element={<ProtectedRoute> <ListOrders /> </ProtectedRoute>} /> 
+            <Route path="/orders/me" element={<ProtectedRoute> <ListOrders /> </ProtectedRoute>} />
             <Route path="/order/:id" element={<ProtectedRoute> <OrderDetails /> </ProtectedRoute>} />
 
           </Routes>
-          {stripeApiKey && <Elements stripe={loadStripe(stripeApiKey)}><Routes><Route path='/payment' element={<ProtectedRoute><Payment/></ProtectedRoute>}/></Routes></Elements>}
+          {stripeApiKey && <Elements stripe={loadStripe(stripeApiKey)}><Routes><Route path='/payment' element={<ProtectedRoute><Payment /></ProtectedRoute>} /></Routes></Elements>}
 
         </div>
 
-        <Routes><Route path="/dashboard" isAdmin={true} element={<ProtectedRoute> <Dashboard /> </ProtectedRoute>} />  </Routes>  
-        <Routes><Route path="/admin/products" isAdmin={true} element={<ProtectedRoute> <ProductsList /> </ProtectedRoute>} />  </Routes>  
-        <Routes><Route path="/admin/product" isAdmin={true} element={<ProtectedRoute> <NewProduct /> </ProtectedRoute>} />  </Routes>  
-        <Routes><Route path="/admin/product/:id" isAdmin={true} element={<ProtectedRoute> <UpdateProduct /> </ProtectedRoute>} />  </Routes>  
-        <Routes><Route path="/admin/orders" isAdmin={true} element={<ProtectedRoute> <OrdersList /> </ProtectedRoute>} />  </Routes>  
+        <Routes><Route path="/dashboard" isAdmin={true} element={<ProtectedRoute> <Dashboard /> </ProtectedRoute>} />  </Routes>
+        <Routes><Route path="/admin/products" isAdmin={true} element={<ProtectedRoute> <ProductsList /> </ProtectedRoute>} />  </Routes>
+        <Routes><Route path="/admin/product" isAdmin={true} element={<ProtectedRoute> <NewProduct /> </ProtectedRoute>} />  </Routes>
+        <Routes><Route path="/admin/product/:id" isAdmin={true} element={<ProtectedRoute> <UpdateProduct /> </ProtectedRoute>} />  </Routes>
+        <Routes><Route path="/admin/orders" isAdmin={true} element={<ProtectedRoute> <OrdersList /> </ProtectedRoute>} />  </Routes>
         <Routes><Route path="/admin/order/:id" isAdmin={true} element={<ProtectedRoute> <ProcessOrder /> </ProtectedRoute>} />  </Routes>
         <Routes><Route path="/admin/users" isAdmin={true} element={<ProtectedRoute> <UsersList /> </ProtectedRoute>} />  </Routes>
         <Routes><Route path="/admin/user/:id" isAdmin={true} element={<ProtectedRoute> <UpdateUser /> </ProtectedRoute>} />  </Routes>
         <Routes><Route path="/admin/reviews" isAdmin={true} element={<ProtectedRoute> <ProductReviews /> </ProtectedRoute>} />  </Routes>
 
         {!loading && (!isAuthenticated || user.role !== 'admin') && (
+
           <Footer />
         )}
+
       </div>
     </Router>
   );

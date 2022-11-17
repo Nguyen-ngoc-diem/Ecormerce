@@ -11,6 +11,7 @@
     "axios": "^1.1.3",
     "bootstrap-icons": "^1.10.2",
     "countries-list": "^2.6.1",
+    "mdb-react-ui-kit": "^5.0.0",
     "mdbreact": "^5.2.0",
     "rc-slider": "^9.6.5",
     "react": "^18.2.0",
