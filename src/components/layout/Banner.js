@@ -14,12 +14,15 @@ const Banner = () => {
                     <video loop autoPlay muted playsInline class="d-block w-100" >
                         <source src="https://images.samsung.com/is/content/samsung/assets/vn/home/2022/Home_Q4_KV_Main-KV_1440x640_pc.mp4" />
                     </video>
-                    <div class="carousel-item__contents">
+                    <div class="carousel-item__contents ">
                         <p>Black Friday Deal</p>
                         <h2>Get up to $400 off select Galaxy Z Series</h2>
                         <p>
                             Get up to $400 off select Galaxy Z Fold4 and up to $1,000 trade-in credit.<sup>θ</sup> Or get up to $200 off select Galaxy Z Flip4 and up to $600 enhanced trade-in credit
                         </p>
+                        {/* <a class="btn btn--carousel" href="/products">
+                            <span class="btn-title">BUY NOW</span>
+                        </a> */}
                     </div>
 
 
