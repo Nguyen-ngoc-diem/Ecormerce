@@ -632,6 +632,7 @@ ul.CTAs a {
     color: grey;
 }
 
+/* Them */
 .carousel-item__contents {
     -webkit-animation: blurIn .6s ease-in-out;
     animation: blurIn .6s ease-in-out;
@@ -644,4 +645,9 @@ ul.CTAs a {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.Footer_section {
+    padding: 0.5;
+
 }
