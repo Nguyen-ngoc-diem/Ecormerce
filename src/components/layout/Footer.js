@@ -46,10 +46,10 @@ export default function App() {
 
                 <section className=''>
                     <MDBRow>
-                        <MDBCol lg='3' md='6' className='d-flex flex-column align-items-center mb-4 mb-md-0'>
+                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
                             <h5 className='text-uppercase'> SUPPORT</h5>
 
-                            <ul className='d-flex flex-column align-items-start list-unstyled  mb-0'>
+                            <ul className='list-unstyled mb-0'>
                                 <li>
                                     <a href='#!' className='text-white'>
                                         Product Support
@@ -67,16 +67,16 @@ export default function App() {
                                 </li>
                                 <li>
                                     <a href='#!' className='text-white'>
-                                        Contact Us
+                                        Contac Us
                                     </a>
                                 </li>
                             </ul>
                         </MDBCol>
 
-                        <MDBCol lg='3' md='6' className='d-flex flex-column align-items-center d-flex mb-4 mb-md-0'>
+                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
                             <h5 className='text-uppercase'>ABOUT US</h5>
 
-                            <ul className='d-flex flex-column align-items-start list-unstyled mb-0'>
+                            <ul className='list-unstyled mb-0'>
                                 <li>
                                     <a href='#!' className='text-white'>
                                         Leadership & Mission
@@ -99,10 +99,10 @@ export default function App() {
                                 </li>
                             </ul>
                         </MDBCol>
-                        <MDBCol lg='3' md='6' className='d-flex flex-column align-items-center d-flex mb-4 mb-md-0'>
+                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
                             <h5 className='text-uppercase'>PRODUCT</h5>
 
-                            <ul className='d-flex flex-column align-items-start list-unstyled mb-0'>
+                            <ul className='list-unstyled mb-0'>
                                 <li>
                                     <a href='#!' className='text-white'>
                                         Cameras
@@ -126,10 +126,10 @@ export default function App() {
                             </ul>
                         </MDBCol>
 
-                        <MDBCol lg='3' md='6' className='d-flex flex-column align-items-center d-flex mb-4 mb-md-0'>
+                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
                             <h5 className='text-uppercase'>CONTACT</h5>
 
-                            <ul className='d-flex flex-column align-items-start list-unstyled mb-0'>
+                            <ul className='list-unstyled mb-0'>
                                 <p>
                                     <MDBIcon icon="home" className="me-2" />
                                     New York, NY 10012, US
