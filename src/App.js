@@ -73,32 +73,32 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+        {/* 
+        <div className="container container-fluid"> */}
+        <Routes>
+          <Route path="/" element={<Home />} exact />
+          <Route path="/search/:keyword" element={<Home />} />
+          <Route path="/product/:id" element={<ProductDetails />} exact />
 
-        <div className="container container-fluid">
-          <Routes>
-            <Route path="/" element={<Home />} exact />
-            <Route path="/search/:keyword" element={<Home />} />
-            <Route path="/product/:id" element={<ProductDetails />} exact />
+          <Route path="/cart" element={<Cart />} exact />
+          <Route path="/shipping" element={<ProtectedRoute> <Shipping /> </ProtectedRoute>} exact />
+          <Route path="/order/confirm" element={<ProtectedRoute> <ConfirmOrder /> </ProtectedRoute>} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/me" element={<ProtectedRoute> <Profile /> </ProtectedRoute>} exact />
+          <Route path="/me/update" element={<ProtectedRoute> <UpdateProfile /> </ProtectedRoute>} exact />
+          <Route path="/password/update" element={<ProtectedRoute> <UpdatePassword /> </ProtectedRoute>} exact />
+          <Route path="/password/forgot" element={<ForgotPassword />} exact />
+          <Route path="/password/reset/:token" element={<NewPassword />} exact />
+          <Route path="/success" element={<ProtectedRoute> <OrderSuccess /> </ProtectedRoute>} exact />
 
-            <Route path="/cart" element={<Cart />} exact />
-            <Route path="/shipping" element={<ProtectedRoute> <Shipping /> </ProtectedRoute>} exact />
-            <Route path="/order/confirm" element={<ProtectedRoute> <ConfirmOrder /> </ProtectedRoute>} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/me" element={<ProtectedRoute> <Profile /> </ProtectedRoute>} exact />
-            <Route path="/me/update" element={<ProtectedRoute> <UpdateProfile /> </ProtectedRoute>} exact />
-            <Route path="/password/update" element={<ProtectedRoute> <UpdatePassword /> </ProtectedRoute>} exact />
-            <Route path="/password/forgot" element={<ForgotPassword />} exact />
-            <Route path="/password/reset/:token" element={<NewPassword />} exact />
-            <Route path="/success" element={<ProtectedRoute> <OrderSuccess /> </ProtectedRoute>} exact />
+          <Route path="/orders/me" element={<ProtectedRoute> <ListOrders /> </ProtectedRoute>} />
+          <Route path="/order/:id" element={<ProtectedRoute> <OrderDetails /> </ProtectedRoute>} />
 
-            <Route path="/orders/me" element={<ProtectedRoute> <ListOrders /> </ProtectedRoute>} />
-            <Route path="/order/:id" element={<ProtectedRoute> <OrderDetails /> </ProtectedRoute>} />
+        </Routes>
+        {stripeApiKey && <Elements stripe={loadStripe(stripeApiKey)}><Routes><Route path='/payment' element={<ProtectedRoute><Payment /></ProtectedRoute>} /></Routes></Elements>}
 
-          </Routes>
-          {stripeApiKey && <Elements stripe={loadStripe(stripeApiKey)}><Routes><Route path='/payment' element={<ProtectedRoute><Payment /></ProtectedRoute>} /></Routes></Elements>}
-
-        </div>
+        {/* </div> */}
 
         <Routes><Route path="/dashboard" isAdmin={true} element={<ProtectedRoute> <Dashboard /> </ProtectedRoute>} />  </Routes>
         <Routes><Route path="/admin/products" isAdmin={true} element={<ProtectedRoute> <ProductsList /> </ProtectedRoute>} />  </Routes>
