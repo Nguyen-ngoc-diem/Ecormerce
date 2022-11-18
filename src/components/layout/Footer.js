@@ -52,58 +52,84 @@ export default function Footer() {
                         <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
                             <h6 className='text-uppercase fw-bold mb-4'>
                                 <MDBIcon icon="gem" className="me-3" />
-                                Company name
+                                SUPPORT
                             </h6>
                             <p>
-                                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit.
+                                <a href='#!' className='text-reset'>
+                                    Product Support
+                                </a>
+                            </p>
+                            <p>
+                                <a href='#!' className='text-reset'>
+                                    Order Support
+                                </a>
+                            </p>
+                            <p>
+                                <a href='#!' className='text-reset'>
+                                    Your Account
+                                </a>
+                            </p>
+                            <p>
+                                <a href='#!' className='text-reset'>
+                                    Contac Us
+                                </a>
                             </p>
                         </MDBCol>
 
                         <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+                            <h6 className='text-uppercase fw-bold mb-4'>Products & Services</h6>
                             <p>
                                 <a href='#!' className='text-reset'>
-                                    Angular
+                                    Cameras
                                 </a>
                             </p>
                             <p>
                                 <a href='#!' className='text-reset'>
-                                    React
+                                    Acessories
                                 </a>
                             </p>
                             <p>
                                 <a href='#!' className='text-reset'>
-                                    Vue
+                                    Headphone
                                 </a>
                             </p>
                             <p>
                                 <a href='#!' className='text-reset'>
-                                    Laravel
+                                    Laptop
+                                </a>
+                            </p>
+                            <p>
+                                <a href='#!' className='text-reset'>
+                                    Sports
+                                </a>
+                            </p>
+                            <p>
+                                <a href='#!' className='text-reset'>
+                                    Outdoor
                                 </a>
                             </p>
                         </MDBCol>
 
                         <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+                            <h6 className='text-uppercase fw-bold mb-4'>ABOUT US</h6>
                             <p>
                                 <a href='#!' className='text-reset'>
-                                    Pricing
+                                    Leadership & Mission
                                 </a>
                             </p>
                             <p>
                                 <a href='#!' className='text-reset'>
-                                    Settings
+                                    Our Business
                                 </a>
                             </p>
                             <p>
                                 <a href='#!' className='text-reset'>
-                                    Orders
+                                    Carneers
                                 </a>
                             </p>
                             <p>
                                 <a href='#!' className='text-reset'>
-                                    Help
+                                    Ethics
                                 </a>
                             </p>
                         </MDBCol>
@@ -130,9 +156,9 @@ export default function Footer() {
             </section>
 
             <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-                © 2021 Copyright:
+                © 2022:
                 <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-                    MDBootstrap.com
+                    MSTORE
                 </a>
             </div>
         </MDBFooter>

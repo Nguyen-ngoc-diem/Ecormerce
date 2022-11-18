@@ -192,8 +192,8 @@ const Home = () => {
                 onChange={setCurrentPageNo}
                 nextPageText={'Next'}
                 prevPageText={'Prev'}
-                firstPageText={'First'}
-                lastPageText={'Last'}
+                firstPageText={'<<'}
+                lastPageText={'>>'}
                 itemClass="page-item"
                 linkClass="page-link"
               />

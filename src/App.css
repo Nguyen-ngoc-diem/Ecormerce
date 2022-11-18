@@ -28,7 +28,8 @@ body {
 
 nav {
     /* background-color: #232f3e; */
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa98; */
+    background-color: #3c3b3b;
 
     padding: 1rem 1rem;
 }
@@ -629,4 +630,18 @@ ul.CTAs a {
 .review_user {
     font-size: 0.8rem;
     color: grey;
+}
+
+.carousel-item__contents {
+    -webkit-animation: blurIn .6s ease-in-out;
+    animation: blurIn .6s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    left: 8rem;
+    max-width: 42%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
