@@ -1,164 +1,161 @@
-// import React, { Fragment } from 'react'
-
-// const Footer = () => {
-//     return (
-//         <Fragment>
-//             <footer className="py-1">
-//                 <p className="text-center mt-1">
-//                     Shopping Cart - 2019-2020, All Rights Reserved
-//                 </p>
-//             </footer>
-//         </Fragment>
-//     )
-// }
-
-// export default Footer
 import React from 'react';
-import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
-
-export default function Footer() {
+import {
+    MDBFooter,
+    MDBContainer,
+    MDBIcon,
+    
+    MDBCol,
+    MDBRow,
+    MDBBtn
+} from 'mdb-react-ui-kit';
+export default function App() {
     return (
-        <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
-            {/* <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-                <div className='me-5 d-none d-lg-block'>
-                    <span>Get connected with us on social networks:</span>
-                </div>
+        <MDBFooter className='text-center' color='white' bgColor='dark'>
+            <MDBContainer className='p-4'>
+                <section className='mb-4'>
+                    <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+                        <MDBIcon icon="facebook" />
+                    </MDBBtn>
 
-                <div>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="facebook-f" />
-                    </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="twitter" />
-                    </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="google" />
-                    </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="instagram" />
-                    </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="linkedin" />
-                    </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="github" />
-                    </a>
-                </div>
-            </section> */}
+                    <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+                        <MDBIcon icon='twitter' />
+                    </MDBBtn>
 
-            <section className='Footer_section'>
-                <MDBContainer className='text-center text-md-start mt-5'>
-                    <MDBRow className='mt-3'>
-                        <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>
-                                <MDBIcon icon="gem" className="me-3" />
-                                SUPPORT
-                            </h6>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Product Support
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Order Support
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Your Account
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Contac Us
-                                </a>
-                            </p>
+                    <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+                        <MDBIcon icon='google' />
+                    </MDBBtn>
+
+                    <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+                        <MDBIcon icon='instagram' />
+                    </MDBBtn>
+
+
+
+                    <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
+                        <MDBIcon icon='github' />
+                    </MDBBtn>
+                </section>
+
+
+
+                <section className='mb-4'>
+                    <p>
+                        Privacy. It’s always personal.Easily control what you share or don’t share with us.
+                    </p>
+                </section>
+
+                <section className=''>
+                    <MDBRow>
+                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+                            <h5 className='text-uppercase'> SUPPORT</h5>
+
+                            <ul className='list-unstyled mb-0'>
+                                <li>
+                                    <a href='#!' className='text-white'>
+                                        Product Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#!' className='text-white'>
+                                        Order Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#!' className='text-white'>
+                                        Your Account
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#!' className='text-white'>
+                                        Contac Us
+                                    </a>
+                                </li>
+                            </ul>
                         </MDBCol>
 
-                        <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>Products & Services</h6>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Cameras
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Acessories
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Headphone
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Laptop
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Sports
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Outdoor
-                                </a>
-                            </p>
+                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+                            <h5 className='text-uppercase'>ABOUT US</h5>
+
+                            <ul className='list-unstyled mb-0'>
+                                <li>
+                                    <a href='#!' className='text-white'>
+                                        Leadership & Mission
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#!' className='text-white'>
+                                        Our Business
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#!' className='text-white'>
+                                        Carneers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#!' className='text-white'>
+                                        Ethics
+                                    </a>
+                                </li>
+                            </ul>
+                        </MDBCol>
+                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+                            <h5 className='text-uppercase'>PRODUCT</h5>
+
+                            <ul className='list-unstyled mb-0'>
+                                <li>
+                                    <a href='#!' className='text-white'>
+                                        Cameras
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#!' className='text-white'>
+                                        Acessories
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#!' className='text-white'>
+                                        Headphone
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#!' className='text-white'>
+                                        Laptop
+                                    </a>
+                                </li>
+                            </ul>
                         </MDBCol>
 
-                        <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>ABOUT US</h6>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Leadership & Mission
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Our Business
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Carneers
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Ethics
-                                </a>
-                            </p>
+                        <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+                            <h5 className='text-uppercase'>CONTACT</h5>
+
+                            <ul className='list-unstyled mb-0'>
+                                <p>
+                                    <MDBIcon icon="home" className="me-2" />
+                                    New York, NY 10012, US
+                                </p>
+                                <p>
+                                    <MDBIcon icon="envelope" className="me-3" />
+                                    info@example.com
+                                </p>
+                                <p>
+                                    <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+                                </p>
+                                <p>
+                                    <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+                                </p>
+                            </ul>
                         </MDBCol>
 
-                        <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
-                            <p>
-                                <MDBIcon icon="home" className="me-2" />
-                                New York, NY 10012, US
-                            </p>
-                            <p>
-                                <MDBIcon icon="envelope" className="me-3" />
-                                info@example.com
-                            </p>
-                            <p>
-                                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
-                            </p>
-                            <p>
-                                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
-                            </p>
-                        </MDBCol>
+
                     </MDBRow>
-                </MDBContainer>
-            </section>
+                </section>
+            </MDBContainer>
 
-            <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-                © 2022:
-                <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-                    MSTORE
+            <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+                © 2020 :
+                <a className='text-white' href='https://mdbootstrap.com/'>
+                    MStore.Com
                 </a>
             </div>
         </MDBFooter>
