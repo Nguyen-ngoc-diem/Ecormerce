@@ -8,6 +8,8 @@ import Product from './product/Product';
 import Loader from './layout/Loader'
 import { useParams } from 'react-router-dom';
 
+import Banner from './layout/Banner'
+
 import { useDispatch, useSelector } from 'react-redux'
 import { useAlert } from 'react-alert';
 import { getProducts } from '../actions/productActions'
@@ -70,6 +72,7 @@ const Home = () => {
 
   return (
     <Fragment>
+      < Banner />
       {loading ? <Loader /> : (
         <Fragment>
           <MetaData title={'Buy Best Products Online'} />

@@ -667,3 +667,9 @@ ul.CTAs a {
     transform: translate(0px, -8px);
     transition: .6s;
 }
+
+/* Them */
+.carousel-item {
+    position: relative;
+    width: 100% !important;
+}

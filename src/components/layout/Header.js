@@ -17,36 +17,37 @@ const Header = () => {
     }
     return (
         <Fragment>
-            <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="/">MSTORE</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav className="navbar  navbar-expand-lg navbar-dark bg-dark">
+                <a className="navbar-brand" href="/">MSTORE</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/">
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav mr-auto">
+                        <li className="nav-item active">
+                            <a className="nav-link" href="/">
                                 HOME
-                                <span class="sr-only">(current)</span>
+                                <span className="sr-only">(current)</span>
                             </a>
                         </li>
-                        {/* <li class="nav-item">
-                            <a class="nav-link" href="/products">
+                        {/* <li className="nav-item">
+                            <a className="nav-link" href="/products">
                                 SHOP
                             </a>
                         </li> */}
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">
+                        <li className="nav-item">
+
+                            <Link className="nav-link" to="/">
                                 ABOUT US
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <div className="col-12 col-md-6 mt-2 mt-md-0">
                         <Search />
                     </div>
 
-                    <ul class="navbar-nav ">
+                    <ul className="navbar-nav ">
                         <Link to="/cart" style={{ textDecoration: "none" }}>
                             <span id="cart" className="ml-3">
                                 <img src={Cart} alt="" width="30" />
@@ -61,7 +62,7 @@ const Header = () => {
                             {cartItems.length}
                         </span>
 
-                        <li class="nav-item">
+                        <li className="nav-item">
                             {user ? (
                                 <div className="ml-4 dropdown d-inline">
                                     <Link
