@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
     return (
-        <div className="sidebar-wrapper">
+        <div className=" sidebar-wrapper">
             <nav id="sidebar">
-                <ul className="list-unstyled components">
+                <ul className=" list-unstyled components">
                     <li>
-                        <Link to="/dashboard"><i className="fa fa-tachometer"></i> Dashboard</Link>
+                        <Link to="/dashboard"><i className="col_col fa fa-tachometer"></i> Dashboard</Link>
                     </li>
 
                     <li>

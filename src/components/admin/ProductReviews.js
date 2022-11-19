@@ -114,7 +114,7 @@ const ProductReviews = () => {
                         <div className="row justify-content-center mt-5">
                             <div className="col-5">
                                 <form onSubmit={submitHandler}>
-                                    <div className="form-group">
+                                    <div className="col_col form-group">
                                         <label htmlFor="productId_field">Enter Product ID</label>
                                         <input
                                             type="text"
@@ -131,7 +131,7 @@ const ProductReviews = () => {
                                         className="btn btn-primary btn-block py-2"
                                     >
                                         SEARCH
-								    </button>
+                                    </button>
                                 </ form>
                             </div>
 
@@ -146,8 +146,8 @@ const ProductReviews = () => {
                                 hover
                             />
                         ) : (
-                                <p className="mt-5 text-center">No Reviews.</p>
-                            )}
+                            <p className="mt-5 text-center">No Reviews.</p>
+                        )}
 
 
                     </Fragment>

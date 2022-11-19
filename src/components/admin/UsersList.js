@@ -8,7 +8,7 @@ import Sidebar from './Sidebar'
 
 import { useAlert } from 'react-alert'
 import { useDispatch, useSelector } from 'react-redux'
-import { allUsers, clearErrors,deleteUser } from '../../actions/userActions'
+import { allUsers, clearErrors, deleteUser } from '../../actions/userActions'
 import { DELETE_USER_RESET } from '../../constants/userConstants'
 
 const UsersList = ({ history }) => {
@@ -33,7 +33,7 @@ const UsersList = ({ history }) => {
             dispatch({ type: DELETE_USER_RESET })
         }
 
-    }, [dispatch, alert, error,navigate,isDeleted])
+    }, [dispatch, alert, error, navigate, isDeleted])
 
     const deleteUserHandler = (id) => {
         dispatch(deleteUser(id))
@@ -102,7 +102,7 @@ const UsersList = ({ history }) => {
 
                 <div className="col-12 col-md-10">
                     <Fragment>
-                        <h1 className="my-5">All Users</h1>
+                        <h1 className="col_col my-5">All Users</h1>
 
                         {loading ? <Loader /> : (
                             <MDBDataTable

@@ -8,7 +8,7 @@ import Sidebar from './Sidebar'
 
 import { useAlert } from 'react-alert'
 import { useDispatch, useSelector } from 'react-redux'
-import { allOrders, clearErrors,deleteOrder } from '../../actions/orderActions';
+import { allOrders, clearErrors, deleteOrder } from '../../actions/orderActions';
 import { DELETE_ORDER_RESET } from '../../constants/orderConstants'
 
 const OrdersList = ({ history }) => {
@@ -17,7 +17,7 @@ const OrdersList = ({ history }) => {
     const dispatch = useDispatch();
 
     const { loading, error, orders } = useSelector(state => state.allOrders);
-    const {isDeleted} = useSelector(state => state.order)
+    const { isDeleted } = useSelector(state => state.order)
     useEffect(() => {
         dispatch(allOrders());
 
@@ -32,7 +32,7 @@ const OrdersList = ({ history }) => {
             dispatch({ type: DELETE_ORDER_RESET })
         }
 
-    }, [dispatch, alert, error, navigate,isDeleted])
+    }, [dispatch, alert, error, navigate, isDeleted])
 
     const deleteOrderHandler = (id) => {
         dispatch(deleteOrder(id))
@@ -102,7 +102,7 @@ const OrdersList = ({ history }) => {
 
                 <div className="col-12 col-md-10">
                     <Fragment>
-                        <h1 className="my-5">All Orders</h1>
+                        <h1 className="col_col my-5">All Orders</h1>
 
                         {loading ? <Loader /> : (
                             <MDBDataTable
