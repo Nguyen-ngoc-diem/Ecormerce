@@ -153,10 +153,10 @@ export default function App() {
             </MDBContainer>
 
             <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                © 2020 :
-                <a className='text-white' href='https://mdbootstrap.com/'>
+                Copyright ©2022 All rights reserved | This template is made with by Huy&Diem
+                {/* <a className='text-white' href='/'>
                     MStore.Com
-                </a>
+                </a> */}
             </div>
         </MDBFooter>
     );

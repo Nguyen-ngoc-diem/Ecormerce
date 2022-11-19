@@ -7,7 +7,7 @@ import { useAlert } from "react-alert";
 import { useState } from 'react';
 import { logout } from "../../../actions/userActions";
 import "../../../App.css"
-import Search from "../Search";
+// import Search from "../Search";
 
 const Header = () => {
     const alert = useAlert();
@@ -18,12 +18,12 @@ const Header = () => {
         dispatch(logout());
         alert.success('Logged out successfully');
     }
-    const [showLogin, setShowLogin] = useState(false);
+    // const [showLogin, setShowLogin] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
-    const handleClickLoginBtn = () => {
-        setShowLogin(!showLogin);
-    };
-    const isLogin = useSelector((state) => state.user.login);
+    // const handleClickLoginBtn = () => {
+    //     setShowLogin(!showLogin);
+    // };
+    // const isLogin = useSelector((state) => state.user.login);
     return (
         <Fragment>
             <div className="header">
@@ -36,7 +36,7 @@ const Header = () => {
                                 onClick={() => setShowMenu(!showMenu)}
                             />
                             <NavLink className="nav__logo" to="/">
-                                LA COLLECTION
+                                MS STORE
                             </NavLink>
                         </div>
                         <div id="pc_nav_menu" className="nav__menu">
@@ -47,23 +47,11 @@ const Header = () => {
                                     </NavLink>
                                 </li>
 
-                                {/* <li className="nav__item">
-                                    <NavLink className="nav__link" to="/products">
-                                        Products
-                                    </NavLink>
-                                </li> */}
-
                                 <li className="nav__item">
                                     <NavLink className="nav__link" to="/about">
                                         About
                                     </NavLink>
                                 </li>
-
-                                {/* <li className="nav__item">
-                                    <NavLink className="nav__link" to="/contact">
-                                        Contact
-                                    </NavLink>
-                                </li> */}
                             </ul>
                         </div>
 
@@ -77,7 +65,7 @@ const Header = () => {
                                 ></div>
                                 <div id="small_nav_menu" className="nav__menu" onClick={() => setShowMenu(!showMenu)}>
                                     <NavLink className="sidebar__nav__logo" to="/">
-                                        LA COLLECTION
+                                        MS STORE
                                     </NavLink>
                                     <ul>
                                         <li className="nav__item">
@@ -86,47 +74,39 @@ const Header = () => {
                                             </NavLink>
                                         </li>
 
-                                        {/* <li className="nav__item">
-                                            <NavLink className="nav__link" to="/products">
-                                                Products
-                                            </NavLink>
-                                        </li> */}
-
                                         <li className="nav__item">
                                             <NavLink className="nav__link" to="/About">
                                                 About
                                             </NavLink>
                                         </li>
-
-                                        {/* <li className="nav__item">
-                                            <NavLink className="nav__link" to="/contact">
-                                                Contact
+                                        <li className="nav__item">
+                                            <NavLink className="nav__link" to="/login">
+                                                Login
                                             </NavLink>
-                                        </li> */}
+                                        </li>
+                                        <li className="nav__item">
+                                            <NavLink className="nav__link" to="/register">
+                                                Register
+                                            </NavLink>
+                                        </li>
+
+
                                     </ul>
                                 </div>
                             </div>
                         )}
 
                         <div className="nav__buttons">
-                            {/* {isLogin ? (
-                                <UserAccount />
-                            ) : (
-                                <button className="nav__button" onClick={handleClickLoginBtn}>
-                                    <FontAwesomeIcon className="btn__icon" icon="fa-solid fa-right-to-bracket" />
-                                    Login
-                                </button>
-                            )}
-                            <li className="nav-item"> */}
+
                             <Link to="/cart" className="nav__button">
                                 <FontAwesomeIcon className="btn__icon" icon="fa-solid fa-cart-arrow-down" />
-                                Cart{cartItems.length}
+                                Cart {cartItems.length}
                             </Link>
                             {user ? (
                                 <div className="ml-4 dropdown d-inline">
                                     <Link
                                         to="/"
-                                        className="btn dropdown-toggle text-white mr-4"
+                                        className=" btn dropdown-toggle text-white mr-4"
                                         type="button"
                                         id="dropDownMenuButton"
                                         data-toggle="dropdown"
@@ -140,7 +120,7 @@ const Header = () => {
                                                 className="rounded-circle"
                                             />
                                         </figure>
-                                        <span>{user && user.name}</span>
+                                        <span className="user_name">{user && user.name}</span>
                                     </Link>
 
                                     <div
@@ -174,12 +154,11 @@ const Header = () => {
                             )}
 
 
-                            {/* <Link to="/cart" className="nav__button">
-                                <FontAwesomeIcon className="btn__icon" icon="fa-solid fa-cart-arrow-down" />
-                                Cart{cartItems.length}
-                            </Link> */}
+
                         </div>
+
                     </div>
+
                 </div>
             </div>
             {/* {showLogin && <LoginModal onCloseBtnClick={handleClickLoginBtn} />} */}

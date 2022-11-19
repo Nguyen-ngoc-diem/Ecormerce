@@ -108,10 +108,8 @@ const Register = () => {
                             <div className="d-flex align-items-center">
                                 <div>
                                     <figure className="avatar mr-3 item-rtl">
-                                        <img
-                                            src={avatarPreview}
-                                            className="rounded-circle"
-                                            alt="avatar preview"
+                                        <img src="./images/user.png"
+
                                         />
                                     </figure>
                                 </div>

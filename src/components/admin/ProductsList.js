@@ -8,7 +8,7 @@ import Sidebar from './Sidebar'
 
 import { useAlert } from 'react-alert'
 import { useDispatch, useSelector } from 'react-redux'
-import { getAdminProducts, clearErrors,deleteProduct } from '../../actions/productActions'
+import { getAdminProducts, clearErrors, deleteProduct } from '../../actions/productActions'
 import { DELETE_PRODUCT_RESET } from '../../constants/productConstants'
 import { useNavigate } from 'react-router-dom'
 
@@ -18,7 +18,7 @@ const ProductsList = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const { loading, error, products } = useSelector(state => state.products);
-    const { error: deleteError,isDeleted} = useSelector(state => state.product);
+    const { error: deleteError, isDeleted } = useSelector(state => state.product);
     useEffect(() => {
         dispatch(getAdminProducts());
 
@@ -38,7 +38,7 @@ const ProductsList = () => {
             dispatch({ type: DELETE_PRODUCT_RESET })
         }
 
-    }, [dispatch, alert, error,deleteError,isDeleted,navigate])
+    }, [dispatch, alert, error, deleteError, isDeleted, navigate])
 
     const setProducts = () => {
         const data = {
@@ -90,7 +90,7 @@ const ProductsList = () => {
 
         return data;
     }
-    const deleteProductHandler = (id) => {    
+    const deleteProductHandler = (id) => {
         dispatch(deleteProduct(id))
     }
     return (
@@ -103,7 +103,7 @@ const ProductsList = () => {
 
                 <div className="col-12 col-md-10">
                     <Fragment>
-                        <h1 className="my-5">All Products</h1>
+                        <h1 className="col_col my-5">All Products</h1>
 
                         {loading ? <Loader /> : (
                             <MDBDataTable

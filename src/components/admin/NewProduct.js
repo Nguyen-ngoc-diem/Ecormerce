@@ -53,7 +53,7 @@ const NewProduct = () => {
             dispatch({ type: NEW_PRODUCT_RESET })
         }
 
-    }, [dispatch, alert, error, success,navigate])
+    }, [dispatch, alert, error, success, navigate])
 
     const submitHandler = (e) => {
         e.preventDefault();
@@ -103,7 +103,7 @@ const NewProduct = () => {
                     <Sidebar />
                 </div>
 
-                <div className="col-12 col-md-10">
+                <div className="col_col col-12 col-md-10">
                     <Fragment>
                         <div className="wrapper my-5">
                             <form className="shadow-lg" onSubmit={submitHandler} encType='multipart/form-data'>
@@ -181,7 +181,7 @@ const NewProduct = () => {
                                         />
                                         <label className='custom-file-label' htmlFor='customFile'>
                                             Choose Images
-                                     </label>
+                                        </label>
                                     </div>
 
                                     {imagesPreview.map(img => (

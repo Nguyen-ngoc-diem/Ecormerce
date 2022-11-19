@@ -135,7 +135,7 @@ const ProductDetails = () => {
             </div>
 
             <div className="col-12 col-lg-5 mt-5">
-              <h3>{product.name}</h3>
+              <h3 className="col_col">{product.name}</h3>
               <p id="product_id">Product # {product._id}</p>
 
               <hr />

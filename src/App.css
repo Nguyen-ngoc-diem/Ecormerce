@@ -39,8 +39,14 @@ nav {
 }
 
 .input-group {
-    width: 90%;
-    margin-right: 35%;
+    /* width: 90%;
+    margin-right: 35%; */
+    align-items: center;
+    background-color: #f0f0f0;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    width: 70%;
 }
 
 #search_field {
@@ -48,7 +54,7 @@ nav {
     padding: 1rem;
 }
 
-#login_btn,
+/* #login_btn, */
 #view_btn {
     background-color: #212529b8;
     padding: 0.4rem 1.8rem;
@@ -672,4 +678,14 @@ ul.CTAs a {
 .carousel-item {
     position: relative;
     width: 100% !important;
+}
+
+/* Your cart */
+.col_col {
+    padding: 3rem 2rem;
+}
+
+/* User name */
+.user_name {
+    color: black;
 }

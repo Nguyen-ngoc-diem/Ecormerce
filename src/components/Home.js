@@ -79,12 +79,12 @@ const Home = () => {
             <MetaData title={'Buy Best Products Online'} />
 
             <h1 id="products_heading">Latest Products</h1>
-            <div className="text-center mg-t2">
-              <Search />
-            </div>
-            <section id="products" className="container mt-5">
-              <div className="row">
 
+            <section id="products" className="container mt-5">
+              <div className="text-center mg-t2">
+                <Search />
+              </div>
+              <div className="row">
                 {keyword ? (
                   <Fragment>
                     <div className="col-6 col-md-3 mt-5 mb-5">
