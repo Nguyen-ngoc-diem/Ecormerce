@@ -7,7 +7,7 @@ import MetaData from './layout/MetaData';
 import Product from './product/Product';
 import Loader from './layout/Loader'
 import { useParams } from 'react-router-dom';
-
+import Search from "./layout/Search";
 import Banner from './layout/Banner'
 
 import { useDispatch, useSelector } from 'react-redux'
@@ -77,8 +77,11 @@ const Home = () => {
         {loading ? <Loader /> : (
           <Fragment>
             <MetaData title={'Buy Best Products Online'} />
-            <h1 id="products_heading">Latest Products</h1>
 
+            <h1 id="products_heading">Latest Products</h1>
+            <div className="text-center mg-t2">
+              <Search />
+            </div>
             <section id="products" className="container mt-5">
               <div className="row">
 

@@ -3,7 +3,7 @@ import React from 'react';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Header from './components/layout/Header'
+import Header from "./components/layout/Header/Header";
 import Footer from './components/layout/Footer';
 
 
@@ -51,7 +51,7 @@ import axios from 'axios'
 import { Elements } from "@stripe/react-stripe-js"
 import { loadStripe } from "@stripe/stripe-js"
 
-
+import About from "./components/layout/About/About";
 function App() {
 
   const [stripeApiKey, setStripeApiKey] = useState('');
@@ -81,6 +81,7 @@ function App() {
           <Route path="/product/:id" element={<ProductDetails />} exact />
 
           <Route path="/cart" element={<Cart />} exact />
+          <Route path="/about" element={<About />} exact />
           <Route path="/shipping" element={<ProtectedRoute> <Shipping /> </ProtectedRoute>} exact />
           <Route path="/order/confirm" element={<ProtectedRoute> <ConfirmOrder /> </ProtectedRoute>} />
           <Route path="/login" element={<Login />} />
