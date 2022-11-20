@@ -651,6 +651,8 @@ ul.CTAs a {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+
+
 }
 
 .Footer_section {
@@ -678,6 +680,7 @@ ul.CTAs a {
 .carousel-item {
     position: relative;
     width: 100% !important;
+    padding-top: 4rem;
 }
 
 /* Your cart */
@@ -689,3 +692,12 @@ ul.CTAs a {
 .user_name {
     color: black;
 }
+
+.row_col {
+    padding-top: 4rem;
+}
+
+/* @media only screen and (max-width: 739px) .carousel-item {
+    margin-bottom: 2rem;
+    width: 100%;
+} */

@@ -15,7 +15,7 @@ const Dashboard = () => {
   const { orders, totalAmount, loading } = useSelector(
     (state) => state.allOrders
   );
-  const {users} = useSelector(state => state.allUsers)
+  const { users } = useSelector(state => state.allUsers)
   let outOfStock = 0;
   products.forEach((product) => {
     if (product.stock === 0) {
