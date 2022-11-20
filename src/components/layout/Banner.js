@@ -17,9 +17,6 @@ const Banner = () => {
                     <div class="carousel-item__contents ">
                         <p>Black Friday Deal</p>
                         <h2>Get up to $400 off select Galaxy Z Series</h2>
-                        <p>
-                            Get up to $400 off select Galaxy Z Fold4 and up to $1,000 trade-in credit.<sup>θ</sup> Or get up to $200 off select Galaxy Z Flip4 and up to $600 enhanced trade-in credit
-                        </p>
                         {/* <a class="btn btn--carousel" href="/products">
                             <span class="btn-title">BUY NOW</span>
                         </a> */}
@@ -40,7 +37,6 @@ const Banner = () => {
                 <div class="carousel-item">
                     <img class="d-block w-100" src="/images/Banner_3.png" alt="Third slide" />
                     <div class="carousel-item__contents">
-                        <p>Black Friday Deal</p>
                         <h2>Gifts they want,savings you'll love</h2>
                         <p>
                             Holiday prices are here. Save up to 40% on select Bespoke Appliances
