@@ -127,14 +127,14 @@ const ProductDetails = () => {
               <Carousel pause='hover'>
                 {product.images && product.images.map(image => (
                   <Carousel.Item key={image.public_id}>
-                    <img className="d-block w-100" src={image.url} alt={product.title} />
+                    <img className="product__img d-block w-100" src={image.url} alt={product.title} />
                   </Carousel.Item>
                 ))}
 
               </Carousel>
             </div>
 
-            <div className="col-12 col-lg-5 mt-5">
+            <div className="col_my col-12 col-lg-5 mt-5">
               <h3 className="col_col">{product.name}</h3>
               <p id="product_id">Product # {product._id}</p>
 

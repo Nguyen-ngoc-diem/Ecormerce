@@ -713,3 +713,8 @@ ul.CTAs a {
         top: 27vh;
     }
 } */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .col_my {
+        margin-left: 3rem;
+    }
+}
