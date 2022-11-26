@@ -7,7 +7,7 @@ import { useAlert } from "react-alert";
 import { useState } from 'react';
 import { logout } from "../../../actions/userActions";
 import "../../../App.css"
-// import Search from "../Search";
+
 
 const Header = () => {
     const alert = useAlert();
@@ -18,12 +18,9 @@ const Header = () => {
         dispatch(logout());
         alert.success('Logged out successfully');
     }
-    // const [showLogin, setShowLogin] = useState(false);
+
     const [showMenu, setShowMenu] = useState(false);
-    // const handleClickLoginBtn = () => {
-    //     setShowLogin(!showLogin);
-    // };
-    // const isLogin = useSelector((state) => state.user.login);
+
     return (
         <Fragment>
             <div className="header">
@@ -161,7 +158,7 @@ const Header = () => {
 
                 </div>
             </div>
-            {/* {showLogin && <LoginModal onCloseBtnClick={handleClickLoginBtn} />} */}
+
 
 
         </Fragment >
