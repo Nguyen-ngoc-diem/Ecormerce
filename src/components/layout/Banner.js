@@ -2,31 +2,31 @@ import React from 'react'
 
 const Banner = () => {
     return (
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    {/* <video controls class="d-block w-100" source src="https://images.samsung.com/is/content/samsung/assets/vn/home/2022/Home_Q4_KV_Main-KV_1440x640_pc.mp4" alt="First slide" /> */}
-                    <video loop autoPlay muted playsInline class="d-block w-100" >
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    {/* <video controls className="d-block w-100" source src="https://images.samsung.com/is/content/samsung/assets/vn/home/2022/Home_Q4_KV_Main-KV_1440x640_pc.mp4" alt="First slide" /> */}
+                    <video loop autoPlay muted playsInline className="d-block w-100" >
                         <source src="https://images.samsung.com/is/content/samsung/assets/vn/home/2022/Home_Q4_KV_Main-KV_1440x640_pc.mp4" />
                     </video>
-                    <div class="carousel-item__contents ">
+                    <div className="carousel-item__contents ">
                         <p>Black Friday Deal</p>
                         <h2>Get up to $400 off select Galaxy Z Series</h2>
-                        {/* <a class="btn btn--carousel" href="/products">
-                            <span class="btn-title">BUY NOW</span>
+                        {/* <a className="btn btn--carousel" href="/products">
+                            <span className="btn-title">BUY NOW</span>
                         </a> */}
                     </div>
 
 
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="/images/Banner_2.png" alt="Second slide" />
-                    <div class="carousel-item__contents">
+                <div className="carousel-item">
+                    <img className="d-block w-100" src="/images/Banner_2.png" alt="Second slide" />
+                    <div className="carousel-item__contents">
                         <h2>Black Friday savings have begun</h2>
                         <p>
                             With great deals across SmartThings-connected devices,
@@ -34,9 +34,9 @@ const Banner = () => {
                         </p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="/images/Banner_3.png" alt="Third slide" />
-                    <div class="carousel-item__contents">
+                <div className="carousel-item">
+                    <img className="d-block w-100" src="/images/Banner_3.png" alt="Third slide" />
+                    <div className="carousel-item__contents">
                         <h2>Gifts they want,savings you'll love</h2>
                         <p>
                             Holiday prices are here. Save up to 40% on select Bespoke Appliances
@@ -44,13 +44,13 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
             </a>
 
 
